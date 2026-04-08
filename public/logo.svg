@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d9e7a"/>
+      <stop offset="100%" style="stop-color:#06d6a0"/>
+    </linearGradient>
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#161b26"/>
+      <stop offset="100%" style="stop-color:#1e2330"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="outerGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="190" fill="url(#darkGrad)" stroke="url(#tealGrad)" stroke-width="2" opacity="0.95"/>
+
+  <!-- Outer ring accent -->
+  <circle cx="200" cy="200" r="175" fill="none" stroke="#0d9e7a" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Geometric A mark -->
+  <g filter="url(#outerGlow)">
+    <!-- Main A shape - sharp angular design -->
+    <path d="M200 70 L310 290 L280 290 L252 225 L148 225 L120 290 L90 290 Z"
+          fill="url(#tealGrad)" opacity="0.95"/>
+    <!-- Inner triangle cutout -->
+    <path d="M200 130 L245 215 L155 215 Z"
+          fill="#0f1117"/>
+  </g>
+
+  <!-- Apex crossbar with circuit/AI detail -->
+  <rect x="155" y="210" width="90" height="4" rx="2" fill="#06d6a0" opacity="0.6"/>
+
+  <!-- AI neural dots on the A -->
+  <circle cx="200" cy="105" r="4" fill="#06d6a0" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="160" cy="210" r="3" fill="#06d6a0" opacity="0.7"/>
+  <circle cx="240" cy="210" r="3" fill="#06d6a0" opacity="0.7"/>
+  <circle cx="130" cy="275" r="3" fill="#06d6a0" opacity="0.5"/>
+  <circle cx="270" cy="275" r="3" fill="#06d6a0" opacity="0.5"/>
+
+  <!-- Connecting lines (neural network feel) -->
+  <line x1="200" y1="109" x2="160" y2="207" stroke="#06d6a0" stroke-width="0.8" opacity="0.3"/>
+  <line x1="200" y1="109" x2="240" y2="207" stroke="#06d6a0" stroke-width="0.8" opacity="0.3"/>
+  <line x1="160" y1="213" x2="130" y2="272" stroke="#06d6a0" stroke-width="0.8" opacity="0.2"/>
+  <line x1="240" y1="213" x2="270" y2="272" stroke="#06d6a0" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- APEX text -->
+  <text x="200" y="330" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="36" letter-spacing="12" fill="#e2e8f0">APEX</text>
+
+  <!-- AI subtitle -->
+  <text x="200" y="358" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="14" letter-spacing="6" fill="#0d9e7a" opacity="0.8">CAREER  AI</text>
+</svg>
