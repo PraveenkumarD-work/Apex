@@ -22,7 +22,7 @@ export function Header() {
   return (
     <header className="flex items-center justify-between px-6 py-4 border-b border-[var(--border)]">
       <div className="flex items-center gap-2">
-        <img src="/logo-mark.svg" alt="APEX" className="w-8 h-8" />
+        <img src="/apex-logo.png" alt="APEX" className="w-8 h-8 rounded" />
         <div className="flex items-baseline gap-1">
           <span className="text-xl font-bold text-[var(--teal)]">A</span>
           <span className="text-xl font-bold text-[var(--text)]">PEX</span>

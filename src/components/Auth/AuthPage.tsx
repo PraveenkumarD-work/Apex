@@ -11,7 +11,7 @@ export function AuthPage() {
     <div className="min-h-screen flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
-          <img src="/logo.svg" alt="APEX" className="w-32 h-32 mx-auto mb-3" />
+          <img src="/apex-logo.png" alt="APEX" className="w-36 h-36 mx-auto mb-3 rounded-2xl" />
           <p className="text-[var(--text-muted)] text-xs tracking-widest uppercase">Your unfair advantage in the job market</p>
         </div>
 

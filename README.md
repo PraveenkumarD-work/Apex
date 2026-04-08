@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/logo.svg" width="160" alt="APEX Logo" />
+  <img src="public/apex-logo.png" width="160" alt="APEX Logo" style="border-radius: 16px;" />
 </p>
 
 <h1 align="center">APEX - Career AI</h1>
