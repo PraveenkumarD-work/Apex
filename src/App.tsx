@@ -6,6 +6,8 @@ import { TabNav } from './components/TabNav'
 import { JobIntelligence } from './components/JobIntelligence'
 import { CVBuilder } from './components/CVBuilder'
 import { PostMortemTab } from './components/PostMortem'
+import { StoryBankTab } from './components/StoryBank'
+import AnalyticsTab from './components/Analytics'
 import { SettingsTab } from './components/Settings'
 import { Spinner } from './components/ui/Spinner'
 import { useJobs } from './hooks/useJobs'
@@ -23,6 +25,8 @@ function AppContent() {
         {activeTab === 'jobs' && <JobIntelligence />}
         {activeTab === 'cv' && <CVBuilder />}
         {activeTab === 'postmortem' && <PostMortemTab />}
+        {activeTab === 'stories' && <StoryBankTab />}
+        {activeTab === 'analytics' && <AnalyticsTab />}
         {activeTab === 'settings' && <SettingsTab />}
       </main>
       <footer className="text-center text-xs text-[var(--text-muted)] py-4 px-4 space-x-2">

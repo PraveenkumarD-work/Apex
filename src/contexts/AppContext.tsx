@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, type ReactNode } from 'react'
 
-export type TabName = 'jobs' | 'cv' | 'postmortem' | 'settings'
+export type TabName = 'jobs' | 'cv' | 'postmortem' | 'stories' | 'analytics' | 'settings'
 
 interface AppContextType {
   activeTab: TabName

@@ -11,6 +11,8 @@ interface JobFormProps {
     status: JobStatus
     jd_text: string
     analysis: null
+    archetype: null
+    enhanced_analysis: null
   }) => Promise<void>
   onAnalyse: (jdText: string) => Promise<void>
   hasApiKey: boolean
@@ -52,6 +54,8 @@ export function JobForm({ onSubmit, onAnalyse, hasApiKey, editingJob, onCancelEd
         status,
         jd_text: jdText.trim(),
         analysis: null,
+        archetype: null,
+        enhanced_analysis: null,
       })
       resetForm()
       onCancelEdit?.()

@@ -13,6 +13,8 @@ export function TabNav({ interviewCount }: { interviewCount: number }) {
     { id: 'jobs', label: 'Job Intelligence', badge: interviewCount || undefined },
     { id: 'cv', label: 'CV Builder' },
     { id: 'postmortem', label: 'Post-Mortem' },
+    { id: 'stories', label: 'Story Bank' },
+    { id: 'analytics', label: 'Analytics' },
     { id: 'settings', label: 'Settings' },
   ]
 

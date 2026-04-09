@@ -34,6 +34,8 @@ export function useJobs() {
     status: JobStatus
     jd_text: string
     analysis: null
+    archetype: null
+    enhanced_analysis: null
   }) => {
     if (!user) return
     try {

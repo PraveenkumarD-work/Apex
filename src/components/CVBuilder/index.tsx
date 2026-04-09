@@ -7,6 +7,7 @@ import { tailorResume, getMatchAnalysis } from '../../lib/ai'
 import { Spinner } from '../ui/Spinner'
 import { KeywordBadge } from '../ui/Badge'
 import { Copy, Download, Trash2 } from 'lucide-react'
+import { PDFExport } from './PDFExport'
 
 export function CVBuilder() {
   const { profile } = useAuth()
@@ -137,6 +138,7 @@ export function CVBuilder() {
                 <button className="btn-ghost text-sm" onClick={handleDownload}>
                   <Download size={14} /> Download .txt
                 </button>
+                <PDFExport resume={tailoredResume} jobTitle="Resume" company="Tailored" />
                 <button className="btn-ghost text-sm" onClick={handleClear}>
                   <Trash2 size={14} /> Clear
                 </button>
